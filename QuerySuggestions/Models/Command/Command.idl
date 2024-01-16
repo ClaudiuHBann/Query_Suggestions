@@ -1,0 +1,10 @@
+namespace QuerySuggestions
+{
+    runtimeclass Command : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        Command(String aName, String aDescription);
+
+        String Name { get; };
+        String Description { get; };
+    }
+}

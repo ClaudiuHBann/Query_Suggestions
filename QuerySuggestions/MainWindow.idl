@@ -1,0 +1,13 @@
+import "Models/Command/Command.idl";
+
+namespace QuerySuggestions
+{
+	[default_interface]
+	runtimeclass MainWindow : Microsoft.UI.Xaml.Window
+	{
+		MainWindow();
+
+		Windows.Foundation.Collections.IObservableVector<Command> Commands { get; };
+		Windows.Foundation.Collections.IObservableVector<String> Algorithms { get; };
+	}
+}
